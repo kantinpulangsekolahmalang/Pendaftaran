@@ -31,28 +31,15 @@
   .wrap{max-width:880px;margin:0 auto}
 
   /* Header */
-  .hero{
-    text-align:center;
-    padding:18px 16px 26px;
-  }
+  .hero{ text-align:center; padding:18px 16px 26px; }
   .logo-box{
-    display:inline-block;
-    padding:16px 22px;
-    border-radius:24px;
+    display:inline-block; padding:16px 22px; border-radius:24px;
     background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.18));
     box-shadow:0 12px 40px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.06);
   }
   .logo-box img{max-width:300px;width:70vw;height:auto;display:block;filter:drop-shadow(0 6px 14px rgba(0,0,0,.4))}
-  .hero h1{
-    margin-top:18px;
-    font-size:clamp(20px,4.6vw,30px);
-    letter-spacing:.5px;
-    text-shadow:0 2px 0 rgba(0,0,0,.4);
-  }
-  .hero .sub{
-    margin-top:8px;color:#ffd9e3;font-weight:600;
-    text-transform:uppercase;letter-spacing:2px;font-size:13px;
-  }
+  .hero h1{ margin-top:18px; font-size:clamp(20px,4.6vw,30px); letter-spacing:.5px; text-shadow:0 2px 0 rgba(0,0,0,.4); }
+  .hero .sub{ margin-top:8px;color:#ffd9e3;font-weight:600; text-transform:uppercase;letter-spacing:2px;font-size:13px; }
   .badge{
     display:inline-block;margin-top:14px;padding:7px 16px;border-radius:999px;
     background:linear-gradient(90deg,var(--pink),var(--pink-light));
@@ -62,18 +49,13 @@
   /* Card */
   .card{
     background:linear-gradient(180deg,rgba(255,244,236,.97),rgba(255,238,230,.97));
-    color:var(--brown);
-    border-radius:22px;
-    padding:26px 22px;
-    margin-top:22px;
-    box-shadow:0 20px 50px rgba(0,0,0,.4);
-    border:1px solid rgba(255,255,255,.5);
+    color:var(--brown); border-radius:22px; padding:26px 22px; margin-top:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.4); border:1px solid rgba(255,255,255,.5);
   }
 
   .section-title{
     display:flex;align-items:center;gap:10px;
-    font-size:18px;font-weight:800;color:var(--brown-dark);
-    margin:6px 0 16px;
+    font-size:18px;font-weight:800;color:var(--brown-dark); margin:6px 0 16px;
   }
   .section-title .num{
     width:30px;height:30px;flex:none;border-radius:50%;
@@ -84,19 +66,11 @@
   .note b{color:#c23a63}
 
   .player-block{
-    border:1.5px dashed rgba(196,58,99,.35);
-    border-radius:16px;
-    padding:18px 16px;
-    margin-bottom:18px;
-    background:rgba(255,255,255,.5);
+    border:1.5px dashed rgba(196,58,99,.35); border-radius:16px;
+    padding:18px 16px; margin-bottom:18px; background:rgba(255,255,255,.5);
   }
-  .player-head{
-    display:flex;align-items:center;gap:10px;margin-bottom:14px;
-    font-weight:800;color:#c23a63;font-size:15px;
-  }
-  .player-head .chip{
-    background:var(--pink);color:#fff;border-radius:8px;padding:3px 10px;font-size:12px;
-  }
+  .player-head{ display:flex;align-items:center;gap:10px;margin-bottom:14px; font-weight:800;color:#c23a63;font-size:15px; }
+  .player-head .chip{ background:var(--pink);color:#fff;border-radius:8px;padding:3px 10px;font-size:12px; }
   .player-head .opt{font-size:12px;color:#8a6a5d;font-weight:600}
 
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -107,37 +81,10 @@
   label .req{color:var(--err)}
   input[type=text],input[type=tel],input[type=email]{
     width:100%;padding:11px 13px;border-radius:10px;
-    border:1.5px solid #e0c4b6;background:#fff;color:var(--brown);
-    font-size:14px;transition:.15s;
+    border:1.5px solid #e0c4b6;background:#fff;color:var(--brown); font-size:14px;transition:.15s;
   }
   input:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 3px rgba(232,98,138,.18)}
   .hint{font-size:11px;color:#9a7a6d;margin-top:4px}
-
-  /* file input */
-  .filewrap{position:relative}
-  .filewrap input[type=file]{
-    width:100%;padding:9px;border:1.5px solid #e0c4b6;border-radius:10px;background:#fff;font-size:13px;
-  }
-  .filewrap input[type=file]::file-selector-button{
-    border:0;background:var(--pink);color:#fff;padding:8px 14px;border-radius:8px;
-    font-weight:700;cursor:pointer;margin-right:10px;
-  }
-  .preview{margin-top:8px;display:none}
-  .preview img{max-width:120px;border-radius:8px;border:2px solid var(--pink);box-shadow:0 4px 10px rgba(0,0,0,.15)}
-
-  /* IG/TikTok info */
-  .social-info{
-    display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 20px;
-  }
-  .social-pill{
-    flex:1 1 200px;display:flex;align-items:center;gap:10px;
-    background:#fff;border:1.5px solid #f0d4c8;border-radius:12px;padding:10px 12px;
-  }
-  .social-pill .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
-  .ic.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
-  .ic.tt{background:#111}
-  .social-pill b{font-size:13px;color:var(--brown-dark);display:block}
-  .social-pill span{font-size:12px;color:#8a6a5d}
 
   .submit-btn{
     width:100%;margin-top:8px;padding:15px;border:0;border-radius:14px;cursor:pointer;
@@ -146,6 +93,7 @@
   }
   .submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(212,78,120,.55)}
   .submit-btn:active{transform:translateY(0)}
+  .submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
 
   .agree{display:flex;gap:10px;align-items:flex-start;margin:18px 0 6px;font-size:13px;color:var(--brown-dark)}
   .agree input{margin-top:3px;width:18px;height:18px;accent-color:var(--pink)}
@@ -153,13 +101,10 @@
   .footer{text-align:center;color:#d9b6c4;font-size:12px;margin-top:26px;line-height:1.8}
   .footer a{color:var(--pink-light)}
 
-  /* alert */
   .alert{display:none;padding:14px 16px;border-radius:12px;margin-bottom:16px;font-weight:600;font-size:14px}
   .alert.show{display:block}
   .alert.err{background:#ffe2e2;color:#a32424;border:1px solid #ffb3b3}
-  .alert.ok{background:#e2ffe9;color:#1c7a3e;border:1px solid #a8e8bf}
 
-  /* success screen */
   #success{display:none;text-align:center;padding:30px 10px}
   #success .check{
     width:90px;height:90px;border-radius:50%;margin:0 auto 20px;
@@ -190,28 +135,18 @@
   <main class="card" id="formCard">
     <div class="alert err" id="alertErr"></div>
 
-    <div class="section-title"><span class="num">i</span> Syarat Wajib Pendaftaran</div>
-    <p class="note">Setiap pemain <b>wajib follow</b> akun resmi penyelenggara dan melampirkan <b>screenshot bukti follow</b> (Instagram &amp; TikTok). Tim terdiri dari <b>5 pemain inti</b> + <b>1 cadangan (opsional)</b>.</p>
+    <div class="section-title"><span class="num">i</span> Ketentuan Pendaftaran</div>
+    <p class="note">Tim terdiri dari <b>5 pemain inti</b> + <b>1 pemain cadangan (opsional)</b>. Lengkapi data setiap pemain dengan benar. Panitia akan menghubungi via WhatsApp.</p>
 
-    <div class="social-info">
-      <div class="social-pill">
-        <div class="ic ig">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-        </div>
-        <div><b>Instagram</b><span>@kantinpulangsekolah</span></div>
-      </div>
-      <div class="social-pill">
-        <div class="ic tt">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.2 1.9 3.9 4 4.2v3c-1.5 0-2.9-.4-4-1.2v6.3c0 3.4-2.7 6.2-6.1 6.2S3.8 18.9 3.8 15.5c0-3.4 2.9-6.2 6.4-5.9v3.1c-.4-.1-.8-.2-1.2-.2-1.6 0-2.9 1.3-2.9 2.9s1.3 3 2.9 3 3-1.3 3-3V3H16z"/></svg>
-        </div>
-        <div><b>TikTok</b><span>@kantinpulangsekolah</span></div>
-      </div>
-    </div>
+    <!-- action diisi otomatis oleh script ke endpoint FormSubmit.co -->
+    <form id="regForm" action="https://formsubmit.co/xf4isalhere@gmail.com" method="POST">
 
-    <form id="regForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-
-      <!-- Hidden helpers for Formspree -->
+      <!-- ==== Pengaturan FormSubmit.co (hidden) ==== -->
       <input type="hidden" name="_subject" value="Pendaftaran Baru — Turnamen MLBB Kantin Pulang Sekolah" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- Honeypot anti-spam -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
       <!-- TEAM NAME -->
       <div class="player-block">
@@ -224,13 +159,13 @@
         </div>
       </div>
 
-      <!-- PLAYERS will be injected here -->
+      <!-- PLAYERS injected here -->
       <div id="players"></div>
 
       <!-- AGREEMENT -->
       <label class="agree">
         <input type="checkbox" id="agree" required />
-        <span>Saya menyatakan seluruh data yang diisi adalah <b>benar</b>, seluruh pemain telah <b>follow Instagram &amp; TikTok @kantinpulangsekolah</b>, dan bersedia mematuhi peraturan turnamen.</span>
+        <span>Saya menyatakan seluruh data yang diisi adalah <b>benar</b> dan bersedia mematuhi peraturan turnamen <b>Kantin Pulang Sekolah</b>.</span>
       </label>
 
       <button type="submit" class="submit-btn" id="submitBtn">🚀 Kirim Pendaftaran</button>
@@ -244,7 +179,7 @@
     </div>
     <h2>Pendaftaran Berhasil! 🎉</h2>
     <p>Terima kasih, data tim kamu sudah terkirim ke panitia <b>Kantin Pulang Sekolah</b>.</p>
-    <p>Panitia akan menghubungi via WhatsApp untuk informasi selanjutnya. Pantau terus Instagram &amp; TikTok kami!</p>
+    <p>Panitia akan menghubungi via WhatsApp untuk informasi selanjutnya.</p>
     <button class="again" onclick="location.reload()">Daftarkan Tim Lain</button>
   </main>
 
@@ -286,25 +221,10 @@
           <label>ID Server ${optional?'':'<span class="req">*</span>'}</label>
           <input type="text" name="${prefix} - ID Server" ${optional?'':'required'} placeholder="Contoh: 1234" inputmode="numeric" />
         </div>
-        <div>
+        <div class="full">
           <label>Nomor WhatsApp ${optional?'':'<span class="req">*</span>'}</label>
           <input type="tel" name="${prefix} - WhatsApp" ${optional?'':'required'} placeholder="08xxxxxxxxxx" />
-          <div class="hint">Aktif & bisa dihubungi</div>
-        </div>
-        <div></div>
-        <div class="full">
-          <label>Bukti Follow Instagram (screenshot) ${optional?'':'<span class="req">*</span>'}</label>
-          <div class="filewrap">
-            <input type="file" name="${prefix} - Bukti IG" accept="image/png,image/jpeg,image/jpg" ${optional?'':'required'} onchange="previewImg(this)" />
-            <div class="preview"><img/></div>
-          </div>
-        </div>
-        <div class="full">
-          <label>Bukti Follow TikTok (screenshot) ${optional?'':'<span class="req">*</span>'}</label>
-          <div class="filewrap">
-            <input type="file" name="${prefix} - Bukti TikTok" accept="image/png,image/jpeg,image/jpg" ${optional?'':'required'} onchange="previewImg(this)" />
-            <div class="preview"><img/></div>
-          </div>
+          <div class="hint">Aktif &amp; bisa dihubungi</div>
         </div>
       </div>
     </div>`;
@@ -315,33 +235,18 @@
   html += playerBlock('CADANGAN', 'Cadangan', true);
   players.innerHTML = html;
 
-  // ---- image preview ----
-  function previewImg(input){
-    const box = input.parentElement.querySelector('.preview');
-    const img = box.querySelector('img');
-    const f = input.files && input.files[0];
-    if(f){
-      img.src = URL.createObjectURL(f);
-      box.style.display='block';
-    } else { box.style.display='none'; }
-  }
-  window.previewImg = previewImg;
-
-  // ---- submit handling ----
+  // ---- submit handling (AJAX ke FormSubmit.co) ----
   const form = document.getElementById('regForm');
   const alertErr = document.getElementById('alertErr');
   const submitBtn = document.getElementById('submitBtn');
+
+  // Gunakan endpoint AJAX FormSubmit agar tetap di halaman & tampil layar sukses
+  const AJAX_ENDPOINT = 'https://formsubmit.co/ajax/xf4isalhere@gmail.com';
 
   form.addEventListener('submit', async function(e){
     e.preventDefault();
     alertErr.classList.remove('show');
 
-    if(form.action.indexOf('YOUR_FORM_ID') !== -1){
-      alertErr.textContent = '⚠️ Form belum dihubungkan ke email. Panitia: masukkan Form ID Formspree dulu (lihat petunjuk di README).';
-      alertErr.classList.add('show');
-      window.scrollTo({top:0,behavior:'smooth'});
-      return;
-    }
     if(!document.getElementById('agree').checked){
       alertErr.textContent = '⚠️ Harap centang pernyataan persetujuan terlebih dahulu.';
       alertErr.classList.add('show');
@@ -352,20 +257,22 @@
     submitBtn.textContent = 'Mengirim...';
 
     try{
-      const data = new FormData(form);
-      const res = await fetch(form.action, {
-        method:'POST', body:data, headers:{'Accept':'application/json'}
+      const fd = new FormData(form);
+      const res = await fetch(AJAX_ENDPOINT, {
+        method:'POST',
+        body:fd,
+        headers:{'Accept':'application/json'}
       });
-      if(res.ok){
+      const j = await res.json().catch(()=>({}));
+      if(res.ok && (j.success === 'true' || j.success === true)){
         document.getElementById('formCard').style.display='none';
         document.getElementById('success').style.display='block';
         window.scrollTo({top:0,behavior:'smooth'});
       } else {
-        const j = await res.json().catch(()=>({}));
-        throw new Error((j.errors && j.errors.map(x=>x.message).join(', ')) || 'Gagal mengirim.');
+        throw new Error(j.message || 'Gagal mengirim. Coba lagi.');
       }
     }catch(err){
-      alertErr.textContent = '❌ Terjadi kesalahan: ' + err.message + ' Coba lagi.';
+      alertErr.textContent = '❌ Terjadi kesalahan: ' + err.message;
       alertErr.classList.add('show');
       window.scrollTo({top:0,behavior:'smooth'});
     }finally{
@@ -374,5 +281,5 @@
     }
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a05732983b45f46d',t:'MTc4MDQxMTA2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0573e450d84ea85',t:'MTc4MDQxMTU0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
